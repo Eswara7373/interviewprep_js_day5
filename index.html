@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Day 5</h2>
+
+    <h4>1. What is the for-in loop in JavaScript? Give its syntax</h4>
+    <p>Ans. The for..in loop in JavaScript allows you to iterate over all property keys of an object.</p>
+    <pre>eg:
+        for (key in object) {
+            // body of for...in
+        }
+    </pre><hr>
+
+    <h4>2. Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript</h4>
+    <p>Ans. <br> Local scope is a characteristic of variables that makes them local (i.e., the variable name is only <br> bound to its value within a scope which is not the global scope).<br><br>
+        Block Level Scope: Variables declared inside a { } block cannot be accessed from outside the block. <br><br>
+        function scope:Variables defined inside a function are not accessible (visible) from outside the function. <br>Variables declared with var, let and const are quite similar when declared inside a function. <br><br>
+        Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by <br> another variable or function having another scope (may be global or local/function or block scope).</p><hr>
+
+    <h4>3. What is difference between null and undefined and where to use what?</h4>
+   <p> Null: It is the intentional absence of the value. It is one of the primitive values of JavaScript. <br>
+    Undefined: It means the value does not exist in the compiler. It is the global object.</p>
+    <pre>Type:
+
+        Null: Object 
+        
+        Undefined: undefined</pre>
+    <hr>
+
+    <h4>4. what is Symbol?</h4>
+    <ul><li>symbol is the unique word</li>
+    <li>symbol is primetive data type.</li>
+    <li>it is introduced in Es6.</li>
+    <li>it is immutable that means that cannot be change.</li>
+    <li>it will given bollean values</li></ul><hr>
+    
+    <h4>5. Write code to explain map and filter in arrays</h4>
+
+    <pre>
+ Map is a function which is in build in function
+ It has both value and index
+    let arr = [1,2,3,4]
+    let brr = arr.map((val,index)=>{
+        return val*2
+    })
+    console.log(brr)
+
+filter:
+-------
+it is also similar to the map
+But in filter it can filter in an array
+There is also a value and index is availabe but suppose we can giving an array in that we are return the value is divided by 2
+In given array they can only filter and form array
+    let arr = [1,2,3,5,4,6,8]
+
+    let result = arr.filter((val,index)=>{
+        
+        return (val%2 ===0) 
+
+    })
+    console.log(result)
+    </pre><hr>
+
+    <h4>6. Explain passed by value and passed by reference</h4>
+    <p>"Passing by value" means that you pass the actual value of the variable into the function. <br>
+        "Passing by reference" means that you pass the variable itself into the function (not just the value).</p><hr>
+
+    <h4>7. Please explain Self Invoking Function and its code</h4>
+<p>It is called annymous function
+    self invocking function is also clled as immediately invoked function and <br> it has introduced in ES6 version.
+    It should be called just after its decalartion so that it doesnot pollutes the outer scope
+                (function(){})()</p><hr>
+</body>
+</html>
